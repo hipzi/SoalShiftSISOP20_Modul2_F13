@@ -34,7 +34,7 @@ int main()
         while ((wait(&status)) > 0);
             process_5 = fork();
             if(process_5 == 0){
-                char *argv[] = {"unzip", "/home/hipzi/modul2/jpg.zip","-d","/home/hipzi/modul2/jpg/", NULL};
+                char *argv[] = {"unzip", "/home/hipzi/modul2/jpg.zip","-d","/home/hipzi/modul2/", NULL};
                 execv("/usr/bin/unzip", argv);
             }
     }
@@ -50,7 +50,7 @@ int main()
         while ((wait(&status)) > 0);
             process_3 = fork();
             if(process_3 == 0){
-                char *argv[] = {"find","/home/hipzi/modul2/jpg/", "-type", "d","-name", "*[:alnum:]*", "-exec", 
+                char *argv[] = {"find","/home/hipzi/modul2/jpg/", "-type", "d","-mindepth", "1", "-exec", 
                                 "mv", "-t", "/home/hipzi/modul2/indomie/","{}","+",NULL};
                 execv("/usr/bin/find", argv);
             }
@@ -59,7 +59,7 @@ int main()
         while ((wait(&status)) > 0);
             process_2 = fork();
             if(process_2 == 0){
-                char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-name", "[:alnum:]*", "-exec", 
+                char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-mindepth", "1", "-exec", 
                                     "touch", "{}/coba1.txt", ";",NULL};
                 execv("/usr/bin/find", argv);
             }
@@ -69,7 +69,7 @@ int main()
         while ((wait(&status)) > 0);
             process_1 = fork();
             if(process_1 == 0){
-                char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-name", "[:alnum:]*", "-exec", 
+                char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-mindepth", "1", "-exec", 
                                     "touch", "{}/coba2.txt", ";",NULL};
                 execv("/usr/bin/find", argv);
             }
