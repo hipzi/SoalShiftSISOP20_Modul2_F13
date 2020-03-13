@@ -1,1 +1,3 @@
-# SoalShiftSISOP20_Modul2_F13
+# Kendala
+
+Minggu ini kondisi kesehatan menurun, jadi dalam mengerjakan soal shift kurang maksimal
