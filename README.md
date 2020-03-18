@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MODUL 2
 
  - Soal 1 :
@@ -541,3 +542,8 @@ Keterangan : </br>
 - <code>if(process_1 == 0)</code> jika child process yang bernama <code>process_1</code> berjalan maka <code> char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-mindepth", "1", "-exec", "touch", "{}/coba2.txt", ";",NULL}</code> menjalankan command <code>find</code> untuk mencari <code>-type d</code> (directory) pada path <code>/home/hipzi/modul2/indomie/</code> serta menggunakan <code>-mindepth 1</code> agar direktori “.” dan “..” tidak termasuk.<code>-exec</code> untuk mengeksekusi hasil dari find dengan menggunakan command <code>touch</code> kemudian membuat file dengan nama <code>{}/coba2.txt</code> </br>
 - <code>execv("/usr/bin/find", argv)</code>untuk menjalankan command <code>find</code></br>
 <p></p>
+=======
+# Kendala
+
+Minggu ini kondisi kesehatan menurun, jadi dalam mengerjakan soal shift kurang maksimal
+>>>>>>> f0aa2566f434da97fe95a056ab0822b5c1ca4e86
