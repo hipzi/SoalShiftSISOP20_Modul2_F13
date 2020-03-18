@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MODUL 2
 
  - Soal 1 :
@@ -238,7 +237,7 @@ e. Tidak boleh menggunakan fungsi system()
     
     Tidak ada fungsi system()
 
-[Fullcode Soal 1](https://www.google.com)
+Source Code : [Soal 1](https://github.com/hipzi/SoalShiftSISOP20_Modul2_F13/blob/master/Soal%201/revisisoal1.c)
  
 <a id="soal-2-a"></a> 
 ## SOAL 2
@@ -409,7 +408,7 @@ menghentikan semua operasinya ketika program killer dijalankan sedangkan <code>a
 - <code>execv("/bin/chmod", argv)</code>untuk menjalankan command <code>chmod</code></br>
 
 <p></p>
-
+Source Code : [Soal 2](https://github.com/hipzi/SoalShiftSISOP20_Modul2_F13/blob/master/Soal%202/revisirevisi.c)
 <a id="soal-3-a"></a>
 
 ## SOAL 3
@@ -542,8 +541,8 @@ Keterangan : </br>
 - <code>if(process_1 == 0)</code> jika child process yang bernama <code>process_1</code> berjalan maka <code> char *argv[] = {"find","/home/hipzi/modul2/indomie/", "-type", "d","-mindepth", "1", "-exec", "touch", "{}/coba2.txt", ";",NULL}</code> menjalankan command <code>find</code> untuk mencari <code>-type d</code> (directory) pada path <code>/home/hipzi/modul2/indomie/</code> serta menggunakan <code>-mindepth 1</code> agar direktori “.” dan “..” tidak termasuk.<code>-exec</code> untuk mengeksekusi hasil dari find dengan menggunakan command <code>touch</code> kemudian membuat file dengan nama <code>{}/coba2.txt</code> </br>
 - <code>execv("/usr/bin/find", argv)</code>untuk menjalankan command <code>find</code></br>
 <p></p>
-=======
+Source Code : [Soal 3](https://github.com/hipzi/SoalShiftSISOP20_Modul2_F13/blob/master/Soal%203/soal3.c)
+
 # Kendala
 
 Minggu ini kondisi kesehatan menurun, jadi dalam mengerjakan soal shift kurang maksimal
->>>>>>> f0aa2566f434da97fe95a056ab0822b5c1ca4e86
